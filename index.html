@@ -1,83 +1,65 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Finance Tracker</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="styles.css">
-
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header>
     <div class="logo">SmartFinance</div>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="#features">Features</a>
-        <a href="login.html">Login</a>
-        <a href="signup.html">Sign Up</a>
-      </nav>
-   <!-- <nav>
-      <a href="#">Home</a>
+      <a href="index.html">Home</a>
       <a href="#features">Features</a>
-      <a href="#login">Login</a>
-      <a href="#signup">Sign Up</a>
-    </nav> -->
+      <a href="dashboard.html">Dashboard</a> <!-- ✅ ADDED -->
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
   </header>
-
   <section class="hero">
     <h1>Track Your Finances Smartly</h1>
-    <p>Monitor, manage and improve your finances using AI-powered analytics and smart insights.</p>
+    <p>
+      Monitor, manage and improve your finances using AI-powered analytics
+      and smart insights.
+    </p>
     <div class="cta">
-      <button>Get Started</button>
+      <a href="signup.html">
+        <button>Get Started</button>
+      </a>
     </div>
   </section>
 
+  <!-- ================= FEATURES SECTION ================= -->
   <section class="features" id="features">
     <div class="feature-card">
       <h3>Real-Time Dashboard</h3>
       <p>Get an instant overview of your spending habits with charts and stats.</p>
     </div>
+
     <div class="feature-card">
       <h3>AI Budget Tips</h3>
       <p>Receive personalized advice based on your financial behavior.</p>
     </div>
+
     <div class="feature-card">
       <h3>Secure Cloud Storage</h3>
       <p>All your financial data is encrypted and stored securely.</p>
     </div>
   </section>
-  <!-- Login Section 
-<section id="login" style="padding: 4rem 2rem; background: #f8fafc;">
-    <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">Login</h2>
-    <div style="max-width: 400px; margin: auto;">
-      <input type="email" id="login-email" placeholder="Email" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem;">
-      <input type="password" id="login-password" placeholder="Password" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem;">
-      <button onclick="handleLogin()" style="width: 100%; background: #3b82f6; color: white; padding: 0.75rem; border: none; border-radius: 8px;">Login</button>
-    </div>
-  </section>
-  
-  <!-- Signup Section 
-  <section id="signup" style="padding: 4rem 2rem; background: #e0f2fe;">
-    <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">Sign Up</h2>
-    <div style="max-width: 400px; margin: auto;">
-      <input type="email" id="signup-email" placeholder="Email" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem;">
-      <input type="password" id="signup-password" placeholder="Password" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem;">
-      <button onclick="handleSignup()" style="width: 100%; background: #10b981; color: white; padding: 0.75rem; border: none; border-radius: 8px;">Sign Up</button>
-    </div>
-  </section> -->
 
+  <!-- ================= FOOTER ================= -->
   <footer>
     &copy; 2025 SmartFinance. All rights reserved.
   </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+
 </body>
-
 </html>
 
-     <script src="script.js"></script>
-  
-</html>
 
 
