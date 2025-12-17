@@ -1,16 +1,24 @@
-package com.smartfinance.model;
+package com.smartfinance;
+
 import jakarta.persistence.*;
-import lombok.*;
 
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String email;
     private String password;
+
+    public User() {}
+
+    public User(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
+    // getters setters
 }
+
