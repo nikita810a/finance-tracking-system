@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Smart Finance Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <h2>Smart Finance Dashboard</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div class="cards">
+  <div class="card">
+    <h3>Total Income</h3>
+    <p id="income">₹0</p>
+  </div>
+  <div class="card">
+    <h3>Total Expense</h3>
+    <p id="expense">₹0</p>
+  </div>
+  <div class="card">
+    <h3>Balance</h3>
+    <p id="balance">₹0</p>
+  </div>
+</div>
+
+<div class="expense-form">
+  <h3>Add Transaction</h3>
+  <input type="text" id="title" placeholder="Title">
+  <input type="number" id="amount" placeholder="Amount">
+  <select id="type">
+    <option value="income">Income</option>
+    <option value="expense">Expense</option>
+  </select>
+  <button onclick="addTransaction()">Add</button>
+</div>
+
+<div class="list">
+  <h3>Transaction History</h3>
+  <ul id="transactionList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
